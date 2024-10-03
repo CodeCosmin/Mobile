@@ -1,5 +1,6 @@
 var video = null;
-
+		video.addEventListener("touchstart", capteaza);
+		video.addEventListener("mousedown", capteaza);
 		// Funcția de capturare a stream-ului video de la cameră
 		function on_cam_success(stream) {
 			video.srcObject = stream;
